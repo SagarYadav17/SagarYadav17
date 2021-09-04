@@ -3,10 +3,10 @@
 ## I'm a Student, and Developer!
 
 - 🔭 I’m currently working on my skills!
-- 🥅 2021 Goals: Buy upcoming MacBook. 🍎
+- 🥅 2021 Goals: Buy a M1 MacBook. 🍎
 - ⚡ Fun fact: I love to play video games. 🎮
 
-### Contact me:
+### Find me at:
 
 [<img src="https://img.shields.io/badge/Hashnode-2962FF?style=for-the-badge&logo=hashnode&logoColor=white" />][hashnode]
 [<img src="https://img.shields.io/badge/Microsoft_Outlook-0078D4?style=for-the-badge&logo=microsoft-outlook&logoColor=white" />][outlook]
@@ -23,9 +23,8 @@
 
 #### Languages: 
 [<img src="https://img.shields.io/badge/Python-FFD43B?style=for-the-badge&logo=python&logoColor=darkgreen" />][python]
-[<img src="https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white" />][c]
-[<img src="https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white" />][c++]
 [<img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" />][javascript]
+[<img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" />][typescript]
 
 
 
@@ -38,7 +37,7 @@
 #### Databases:
 [<img src="https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white" />][postgres]
 [<img src="https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white" />][mongodb]
-[<img src="https://img.shields.io/badge/MySQL-00000F?style=for-the-badge&logo=mysql&logoColor=white" />][mysql]
+[<img src="https://img.shields.io/badge/redis-%23DD0031.svg?&style=for-the-badge&logo=redis&logoColor=white" />][redis]
 
 #### IDE & Editors:
 [<img src="https://img.shields.io/badge/Visual_Studio_Code-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white" />][vscode]
@@ -52,7 +51,6 @@
 #### Others:
 [<img src="https://img.shields.io/badge/Heroku-430098?style=for-the-badge&logo=heroku&logoColor=white" />][heroku]
 [<img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" />][linux]
-[<img src="https://img.shields.io/badge/mac%20os-000000?style=for-the-badge&logo=apple&logoColor=white" />][mac-os]
 
 
 [hashnode]: https://sagaryadav17.hashnode.dev/
@@ -61,23 +59,20 @@
 [twitter]: https://twitter.com/deadwaist
 [linkedin]: https://linkedin.com/in/sagaryadav17
 [reddit]: https://www.reddit.com/user/deadwaist
-[python]: #
-[c]: #
-[c++]: #
-[javascript]: #
-[postgres]: #
-[mongodb]: #
-[mysql]: #
-[django]: #
-[drf]: #
-[fastapi]: #
-[python]: #
-[flask]: #
-[docker]: #
-[conda]: #
-[git]: #
-[heroku]: #
-[linux]: #
-[mac-os]: #
-[vscode]: #
-[vim]: #
+[python]: https://www.python.org/
+[javascript]: https://en.wikipedia.org/wiki/JavaScript/
+[typescript]: https://www.typescriptlang.org/
+[postgres]: https://www.postgresql.org/
+[mongodb]: https://www.mongodb.com/
+[redis]: https://redis.io/
+[django]: https://www.djangoproject.com/
+[drf]: https://www.django-rest-framework.org/
+[fastapi]: https://fastapi.tiangolo.com/
+[flask]: https://flask.palletsprojects.com/en/2.0.x/
+[docker]: https://www.docker.com/
+[conda]: https://conda.io/projects/conda/en/latest/
+[git]: https://git-scm.com/
+[heroku]: https://www.heroku.com/
+[linux]: https://www.linux.org/
+[vscode]: https://code.visualstudio.com/
+[vim]: https://www.vim.org/
