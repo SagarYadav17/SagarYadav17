@@ -5,7 +5,6 @@
 ## I'm a Back end Developer!
 
 - 🔭 I’m currently working on my skills!
-- 🥅 2021 Goals: Buy a M1 MacBook. 🍎
 - ⚡ Fun fact: I love to play video games. 🎮
 
 <br />
