@@ -35,8 +35,8 @@ class Article(models.Model):
     title = models.CharField(max_length=255, null=True, blank=True)
     author = models.CharField(max_length=255, null=True, blank=True)
     description = models.CharField(max_length=255, null=True, blank=True)
-    url = models.URLField(null=True, blank=True)
-    urlToImage = models.URLField(null=True, blank=True)
+    url = models.URLField(max_length=1000, null=True, blank=True)
+    urlToImage = models.URLField(max_length=1000, null=True, blank=True)
     publishedAt = models.DateTimeField(blank=True, null=True)
     created_at = models.DateTimeField(auto_now_add=True)
 

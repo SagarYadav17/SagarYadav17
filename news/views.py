@@ -26,19 +26,22 @@ def create_article(article, country, category_name):
     country_obj = Country.objects.get_or_create(name=country)[0]
     category_obj = Category.objects.get_or_create(name=category_name)[0]
 
-    obj = Article.objects.get_or_create(
-        source=source_obj,
-        category=category_obj,
-        country=country_obj,
-        title=article.get("title"),
-        author=article.get("author"),
-        description=article.get("description"),
-        url=article.get("url"),
-        urlToImage=article.get("urlToImage"),
-        publishedAt=article.get("publishedAt"),
-    )[0]
+    objs = Article.objects.filter(url=article.get("url"))
 
-    return obj
+    if not objs:
+        Article.objects.create(
+            source=source_obj,
+            category=category_obj,
+            country=country_obj,
+            title=article.get("title"),
+            author=article.get("author"),
+            description=article.get("description"),
+            url=article.get("url"),
+            urlToImage=article.get("urlToImage"),
+            publishedAt=article.get("publishedAt"),
+        )
+
+    return True
 
 
 class FetchNews(APIView):
