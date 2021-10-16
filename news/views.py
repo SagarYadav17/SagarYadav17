@@ -17,7 +17,8 @@ from news.serializers import ArticlesListSerializer
 
 # Others
 import requests
-from config.config import CATEGORIES, NEWS_API_KEY, COUNTRIES, BASE_NEWS_URL
+from datetime import date, timedelta
+from config.config import CATEGORIES, COUNTRIES, BASE_NEWS_URL
 
 
 def create_article(article, country, category_name):
@@ -67,6 +68,17 @@ class FetchNews(APIView):
 
                 for article in response.get("articles"):
                     create_article(article, country, category_name)
+
+        return Response({"status": True})
+
+
+class DeleteOldNews(APIView):
+    permission_classes = (IsAuthenticated,)
+
+    def get(self, request):
+        Article.objects.filter().exclude(
+            publishedAt__date__range=[date.today() - timedelta(days=7), date.today()]
+        ).delete()
 
         return Response({"status": True})
 
