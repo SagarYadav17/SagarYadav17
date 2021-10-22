@@ -76,11 +76,10 @@ class DeleteOldNews(APIView):
     permission_classes = (IsAuthenticated,)
 
     def get(self, request):
-        Article.objects.filter().exclude(
-            publishedAt__date__range=[date.today() - timedelta(days=7), date.today()]
-        ).delete()
+        old_news = Article.objects.filter().exclude(publishedAt__date__range=[date.today() - timedelta(days=3), date.today()])
+        old_news.delete()
 
-        return Response({"status": True})
+        return Response({"status": f"{old_news.count()} news are deleted!"})
 
 
 class News(ListAPIView):

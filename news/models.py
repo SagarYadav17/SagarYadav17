@@ -23,15 +23,9 @@ class Country(models.Model):
 
 
 class Article(models.Model):
-    source = models.ForeignKey(
-        Source, on_delete=models.DO_NOTHING, blank=True, null=True
-    )
-    category = models.ForeignKey(
-        Category, on_delete=models.DO_NOTHING, blank=True, null=True
-    )
-    country = models.ForeignKey(
-        Country, on_delete=models.DO_NOTHING, blank=True, null=True
-    )
+    source = models.ForeignKey(Source, on_delete=models.DO_NOTHING, blank=True, null=True)
+    category = models.ForeignKey(Category, on_delete=models.DO_NOTHING, blank=True, null=True)
+    country = models.ForeignKey(Country, on_delete=models.DO_NOTHING, blank=True, null=True)
     title = models.TextField(max_length=1000, null=True, blank=True)
     author = models.CharField(max_length=255, null=True, blank=True)
     description = models.TextField(max_length=1000, null=True, blank=True)
