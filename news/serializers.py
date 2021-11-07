@@ -6,6 +6,7 @@ from news.models import Article
 
 
 class ArticlesListSerializer(serializers.ModelSerializer):
+    title =serializers.SerializerMethodField()
     category = serializers.SerializerMethodField()
     source = serializers.SerializerMethodField()
     publishedAt = serializers.SerializerMethodField()
@@ -13,6 +14,9 @@ class ArticlesListSerializer(serializers.ModelSerializer):
     class Meta:
         model = Article
         fields = "__all__"
+    
+    def get_title(self, obj):
+        return obj.title.split(' - ')[0]
 
     def get_category(self, obj):
         return obj.category.name if obj.category else None
