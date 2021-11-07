@@ -10,6 +10,7 @@ class ArticlesListSerializer(serializers.ModelSerializer):
     category = serializers.SerializerMethodField()
     source = serializers.SerializerMethodField()
     publishedAt = serializers.SerializerMethodField()
+    country = serializers.SerializerMethodField()
 
     class Meta:
         model = Article
@@ -29,3 +30,6 @@ class ArticlesListSerializer(serializers.ModelSerializer):
             return naturaltime(obj.publishedAt)
         else:
             return naturalday(obj.publishedAt)
+    
+    def get_country(self, obj):
+        return obj.country.name if obj.country else None
