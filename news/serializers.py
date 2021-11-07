@@ -1,11 +1,14 @@
 from rest_framework import serializers
+from django.contrib.humanize.templatetags.humanize import naturaltime, naturalday
 
+from datetime import date
 from news.models import Article
 
 
 class ArticlesListSerializer(serializers.ModelSerializer):
     category = serializers.SerializerMethodField()
     source = serializers.SerializerMethodField()
+    publishedAt = serializers.SerializerMethodField()
 
     class Meta:
         model = Article
@@ -16,3 +19,9 @@ class ArticlesListSerializer(serializers.ModelSerializer):
 
     def get_source(self, obj):
         return obj.source.name if obj.source else None
+
+    def get_publishedAt(self, obj):
+        if obj.publishedAt.date() == date.today():
+            return naturaltime(obj.publishedAt)
+        else:
+            return naturalday(obj.publishedAt)
