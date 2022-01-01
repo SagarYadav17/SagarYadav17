@@ -6,18 +6,19 @@ from news.models import Article
 
 
 class ArticlesListSerializer(serializers.ModelSerializer):
-    title =serializers.SerializerMethodField()
+    title = serializers.SerializerMethodField()
     category = serializers.SerializerMethodField()
     source = serializers.SerializerMethodField()
     publishedAt = serializers.SerializerMethodField()
     country = serializers.SerializerMethodField()
+    author = serializers.SerializerMethodField()
 
     class Meta:
         model = Article
         fields = "__all__"
-    
+
     def get_title(self, obj):
-        return obj.title.split(' - ')[0]
+        return obj.title.split(" - ")[0]
 
     def get_category(self, obj):
         return obj.category.name if obj.category else None
@@ -29,7 +30,10 @@ class ArticlesListSerializer(serializers.ModelSerializer):
         if obj.publishedAt.date() == date.today():
             return naturaltime(obj.publishedAt)
         else:
-            return naturalday(obj.publishedAt)
-    
+            return naturalday(obj.publishedAt).capitalize()
+
     def get_country(self, obj):
         return obj.country.name if obj.country else None
+
+    def get_author(self, obj):
+        return obj.author if obj.author else "Anonymous Hero"
