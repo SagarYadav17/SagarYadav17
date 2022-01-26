@@ -2,7 +2,7 @@
 
 ---
 
-## I'm a Back end Developer!
+## I'm a Backend Developer!
 
 - 🔭 I’m currently working on my skills!
 - ⚡ Fun fact: I love to play video games. 🎮
@@ -30,8 +30,6 @@
 |          <img src="https://img.shields.io/badge/monero-FF6600?style=for-the-badge&logo=monero&logoColor=white" />           | `42kQDg2ZBUuD3ZGWCX5iuDae4u3agQjiZCsg1PWfKgq3A7GsqHVrKNE4Yki76D9ZnyD5ejuENzhLuZb15iBgnhkwJPPDird` |
 |          <img src="https://img.shields.io/badge/Bitcoin-000000?style=for-the-badge&logo=bitcoin&logoColor=white"/>          |                           `bc1qfenpk9nrh4x295n3atpg0uccggwxwhnuvqclr2`                            |
 | [<img src="https://img.shields.io/badge/Liberapay-F6C915?style=for-the-badge&logo=liberapay&logoColor=black" />][liberapay] |                               [Liberapay / SagarYadav17][liberapay]                               |
-
-<br />
 
 [hashnode]: https://sagaryadav17.hashnode.dev/
 [outlook]: mailto:sagaryadav17@outlook.com
