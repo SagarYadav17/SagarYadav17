@@ -3,7 +3,7 @@
 ---
 
 - I'm a Backend Developer!
-- I’m currently working on my skills!
+- I’m currently learning Docker & python libraries like (Numpy and Pandas)!
 
 ## Find me at:
 
